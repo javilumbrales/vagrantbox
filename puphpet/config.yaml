@@ -3,7 +3,7 @@ vagrantfile:
     vm:
         box: puphpet/debian75-x64
         box_url: puphpet/debian75-x64
-        hostname: handpicked.dev
+        hostname: vagrantbox.dev
         memory: '1024'
         cpus: '1'
         chosen_provider: virtualbox
@@ -164,10 +164,9 @@ apache:
         - rewrite
     vhosts:
         av_93ikxwqqvuc1:
-            servername: dev.handpickedcollection.com
+            servername: dev.vagrantbox.com
             serveraliases:
-                - dev.foodstore.com
-                - dev.handpickedcollection.com
+                - dev.vagrantbox.com
             docroot: /var/www/
             port: '80'
             setenv:

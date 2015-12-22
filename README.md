@@ -31,7 +31,19 @@ If you want to use (and you should want to, for performance reasons) NFS shared 
 
 # Usage
 
-    vagrant up
+    Start the VM:
+
+    ```vagrant up```
+
+    Place your php files within `www`.
+    Add the following to your /etc/hosts file:
+
+    ```33.33.33.10 dev.vagrantbox.com```
+
+    Open your browser and go to: dev.vagrantbox.com, your site should be loaded :)
+
+    Root password: vagrant
+    MySQL password: vagrant
 
 
 Feel free to contribute, and contact me for any issues.
